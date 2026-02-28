@@ -283,18 +283,16 @@ export function LandingElite() {
                 </div>
               </div>
 
-              <div className="flex-1 space-y-6">
-                <div className="h-full min-h-[300px] rounded-3xl border border-[#D4AF37]/30 bg-[#112240]/50 p-2 overflow-hidden backdrop-blur-sm shadow-2xl">
+              <div className="flex-1 flex flex-col gap-6">
+                <div className="flex-1 min-h-[400px] rounded-3xl border border-[#D4AF37]/30 bg-[#112240]/50 p-2 overflow-hidden backdrop-blur-sm shadow-2xl flex">
                   <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15356.1234567890!2d-48.0610733!3d-15.8104084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a33b68a0d922d%3A0xd2a2c511ff26c77e!2sSolange%20Bezerra%20Advogada!5e0!3m2!1spt-BR!2sbr!4v1234567890123"
-                    width="100%"
-                    height="100%"
+                    className="w-full h-full min-h-[400px] rounded-2xl transition-opacity duration-500"
                     style={{ border: 0 }}
                     allowFullScreen={true}
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
                     title="Mapa - Solange Bezerra Advogada"
-                    className="rounded-2xl transition-opacity duration-500"
                   />
                 </div>
                 <div className="text-center">
