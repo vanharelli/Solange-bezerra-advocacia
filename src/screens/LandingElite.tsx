@@ -204,7 +204,7 @@ export function LandingElite() {
               <div className="group relative mx-auto w-full max-w-[16rem] sm:max-w-[18rem] lg:max-w-[20rem] overflow-hidden rounded-2xl border border-[#D4AF37]/30 bg-[#0B1A30]/60 p-1">
                 <div className="relative bg-[#0B1A30]">
                   <img
-                    src="/solange.png.png"
+                    src="/solange.png"
                     alt="Solange Bezerra"
                     className="w-full h-auto rounded-xl object-contain transition-all duration-500 ease-out"
                   />
@@ -238,29 +238,29 @@ export function LandingElite() {
           <div className="mx-auto max-w-4xl">
             <div className="text-center mb-8">
               <div className="mb-4 grid grid-cols-4 gap-3 sm:gap-4">
-                <div className="flex items-center justify-center gap-2 rounded-xl border border-[#D4AF37]/20 bg-[#0B1A30]/40 backdrop-blur-md backdrop-saturate-150 px-3 py-2 sm:px-4 sm:py-3 shadow-[0_6px_20px_rgba(0,0,0,0.25)]">
+                <div className="flex flex-col items-center justify-center gap-2 rounded-xl border border-[#D4AF37]/20 bg-[#0B1A30]/40 backdrop-blur-md backdrop-saturate-150 px-2 py-3 sm:px-4 sm:py-4 shadow-[0_6px_20px_rgba(0,0,0,0.25)] text-center">
                   <div className="flex h-6 w-6 items-center justify-center rounded-lg bg-[#D4AF37]/10">
                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-[#D4AF37]"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
                   </div>
-                  <span className="text-xs font-semibold text-white">15 Anos na Linha de Frente</span>
+                  <span className="text-[10px] sm:text-xs font-semibold text-white leading-tight">15 Anos na Linha de Frente</span>
                 </div>
-                <div className="flex items-center justify-center gap-2 rounded-xl border border-[#D4AF37]/20 bg-[#0B1A30]/40 backdrop-blur-md backdrop-saturate-150 px-3 py-2 sm:px-4 sm:py-3 shadow-[0_6px_20px_rgba(0,0,0,0.25)]">
+                <div className="flex flex-col items-center justify-center gap-2 rounded-xl border border-[#D4AF37]/20 bg-[#0B1A30]/40 backdrop-blur-md backdrop-saturate-150 px-2 py-3 sm:px-4 sm:py-4 shadow-[0_6px_20px_rgba(0,0,0,0.25)] text-center">
                   <div className="flex h-6 w-6 items-center justify-center rounded-lg bg-[#D4AF37]/10">
                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-[#D4AF37]"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
                   </div>
-                  <span className="text-xs font-semibold text-white">+457 Clientes Protegidos</span>
+                  <span className="text-[10px] sm:text-xs font-semibold text-white leading-tight">+457 Clientes Protegidos</span>
                 </div>
-                <div className="flex items-center justify-center gap-2 rounded-xl border border-[#D4AF37]/20 bg-[#0B1A30]/40 backdrop-blur-md backdrop-saturate-150 px-3 py-2 sm:px-4 sm:py-3 shadow-[0_6px_20px_rgba(0,0,0,0.25)]">
+                <div className="flex flex-col items-center justify-center gap-2 rounded-xl border border-[#D4AF37]/20 bg-[#0B1A30]/40 backdrop-blur-md backdrop-saturate-150 px-2 py-3 sm:px-4 sm:py-4 shadow-[0_6px_20px_rgba(0,0,0,0.25)] text-center">
                   <div className="flex h-6 w-6 items-center justify-center rounded-lg bg-[#D4AF37]/10">
                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-[#D4AF37]"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                   </div>
-                  <span className="text-xs font-semibold text-white">100% Foco no Seu Resultado</span>
+                  <span className="text-[10px] sm:text-xs font-semibold text-white leading-tight">100% Foco no Seu Resultado</span>
                 </div>
-                <div className="flex items-center justify-center gap-2 rounded-xl border border-[#D4AF37]/20 bg-[#0B1A30]/40 backdrop-blur-md backdrop-saturate-150 px-3 py-2 sm:px-4 sm:py-3 shadow-[0_6px_20px_rgba(0,0,0,0.25)]">
+                <div className="flex flex-col items-center justify-center gap-2 rounded-xl border border-[#D4AF37]/20 bg-[#0B1A30]/40 backdrop-blur-md backdrop-saturate-150 px-2 py-3 sm:px-4 sm:py-4 shadow-[0_6px_20px_rgba(0,0,0,0.25)] text-center">
                   <div className="flex h-6 w-6 items-center justify-center rounded-lg bg-[#D4AF37]/10">
                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-[#D4AF37]"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
                   </div>
-                  <span className="text-xs font-semibold text-white">24h Plantão para Urgências</span>
+                  <span className="text-[10px] sm:text-xs font-semibold text-white leading-tight">24h Plantão para Urgências</span>
                 </div>
               </div>
               <button

@@ -27,7 +27,7 @@ export function Header({ onCtaClick }: HeaderProps) {
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-4 sm:px-6">
         <div className="flex items-center gap-3">
           <img
-            src="/logo.png.png"
+            src="/logo.png"
             alt="Solange Bezerra Advocacia"
             className="h-10 w-auto transition-transform duration-300 hover:scale-105"
           />
