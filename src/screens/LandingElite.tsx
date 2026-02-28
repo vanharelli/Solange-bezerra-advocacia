@@ -11,6 +11,7 @@ export function LandingElite() {
     urgencia?: 'Imediata (Risco Atual)' | 'Alta (Processo em Andamento)' | 'Preventiva (Consultoria)'
     nome?: string
     whatsapp?: string
+    email?: string
     observacao?: string
   }>({})
   const [isTermsOpen, setIsTermsOpen] = useState(false)
@@ -77,7 +78,7 @@ export function LandingElite() {
     setCurrentStep(3)
   }
 
-  function updateField<K extends 'nome' | 'whatsapp' | 'observacao'>(key: K, value: string) {
+  function updateField<K extends 'nome' | 'whatsapp' | 'observacao' | 'email'>(key: K, value: string) {
     setFormData((d) => ({ ...d, [key]: value }))
   }
 
