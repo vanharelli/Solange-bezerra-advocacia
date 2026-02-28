@@ -198,10 +198,10 @@ export function LandingElite() {
         <section className="mt-16 sm:mt-24 md:mt-32">
           <div className="grid grid-cols-1 items-center gap-10 sm:gap-16 lg:grid-cols-2">
             <div className="space-y-6">
-              <div className="text-xs font-semibold uppercase tracking-[0.2em] text-[#D4AF37] text-center lg:text-left mx-auto lg:mx-0 w-full max-w-[16rem] sm:max-w-[18rem] lg:max-w-none">
+              <div className="text-xs font-semibold uppercase tracking-[0.2em] text-[#D4AF37] text-center lg:text-left mx-auto lg:mx-0 w-full max-w-[18rem] sm:max-w-[22rem] lg:max-w-none">
                 PRESIDENTE SINTTASB/DF | COMISSÃO SINDICAL OAB-TAGUATINGA
               </div>
-              <div className="group relative mx-auto lg:mx-0 w-full max-w-[16rem] sm:max-w-[20rem] lg:max-w-[24rem] overflow-hidden rounded-2xl border border-[#D4AF37]/30 bg-[#0B1A30]/60 p-1">
+              <div className="group relative mx-auto lg:mx-0 w-full max-w-[18rem] sm:max-w-[24rem] lg:max-w-[28rem] overflow-hidden rounded-2xl border border-[#D4AF37]/30 bg-[#0B1A30]/60 p-1">
                 <div className="relative bg-[#0B1A30]">
                   <img
                     src="/solange.png"
@@ -219,15 +219,15 @@ export function LandingElite() {
                 <Star className="shimmer-star h-4 w-4 fill-[#D4AF37] text-[#D4AF37]" style={{ animationDelay: '0.8s' }} />
               </div>
             </div>
-            <div className="space-y-6 self-center w-full max-w-[20rem] sm:max-w-[24rem] lg:max-w-none mx-auto lg:mx-0">
-              <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#D4AF37] text-center lg:text-left">Solange Bezerra</h3>
-              <p className="text-sm sm:text-base leading-relaxed text-[#CBD5E1] text-center lg:text-left">
+            <div className="space-y-6 self-center w-full max-w-[20rem] sm:max-w-[28rem] lg:max-w-none mx-auto lg:mx-0">
+              <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#D4AF37] text-center lg:text-left">Solange Bezerra</h3>
+              <p className="text-base sm:text-lg lg:text-xl leading-relaxed text-[#CBD5E1] text-center lg:text-left">
                 Com a autoridade de quem preside o SINTTASB/DF e lidera a Comissão de Direito Sindical da OAB-Taguatinga, a Dra. Solange Bezerra não atua apenas na teoria ela está na linha de frente onde as decisões acontecem.
               </p>
-              <p className="text-sm sm:text-base leading-relaxed text-[#CBD5E1] text-center lg:text-left">
+              <p className="text-base sm:text-lg lg:text-xl leading-relaxed text-[#CBD5E1] text-center lg:text-left">
                 Especialista em Direito do Trabalho e Direito Tributário, ela utiliza sua liderança institucional para garantir uma condução jurídica técnica e segura. Onde surgem conflitos complexos, nossa estrutura entrega o planejamento e a fundamentação necessários para proteger seus interesses e seu patrimônio.
               </p>
-              <blockquote className="border-l-4 border-[#D4AF37] pl-4 text-white italic text-sm sm:text-lg md:text-xl text-center lg:text-left lg:border-l-4 lg:pl-6">
+              <blockquote className="border-l-4 border-[#D4AF37] pl-4 text-white italic text-base sm:text-xl lg:text-2xl text-center lg:text-left lg:border-l-4 lg:pl-6">
                 Justiça exige método, coragem e precisão jurídica — e é assim que atuamos.
               </blockquote>
             </div>
@@ -505,7 +505,7 @@ export function LandingElite() {
                         onClick={submitFinal}
                         className="w-full sm:flex-1 order-1 sm:order-2 neon-pulse rounded-2xl border-2 border-[#D4AF37] bg-[#D4AF37] px-8 py-4 text-sm font-bold uppercase tracking-widest text-[#0B1A30] transition-all hover:bg-transparent hover:text-[#D4AF37] active:scale-95"
                       >
-                        Enviar Diagnóstico
+                        Enviar para Dra. Solange
                       </button>
                     </div>
                   </div>
