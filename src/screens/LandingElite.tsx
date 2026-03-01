@@ -215,8 +215,8 @@ export function LandingElite() {
                     <div className="pointer-events-none absolute inset-0 rounded-xl shadow-[inset_0_0_0_1px_rgba(212,175,55,0.15)]"></div>
                   </div>
                 </div>
-                <div className="flex flex-col items-center lg:items-start gap-6">
-                  <div className="flex items-center justify-center lg:justify-start gap-1.5" aria-label="Avaliação 5 de 5">
+                <div className="flex flex-col items-center gap-6 lg:mx-0 w-full max-w-[18rem] sm:max-w-[24rem] lg:max-w-[28rem] mx-auto">
+                  <div className="flex items-center justify-center gap-1.5" aria-label="Avaliação 5 de 5">
                     <Star className="shimmer-star h-4 w-4 fill-[#D4AF37] text-[#D4AF37]" style={{ animationDelay: '0s' }} />
                     <Star className="shimmer-star h-4 w-4 fill-[#D4AF37] text-[#D4AF37]" style={{ animationDelay: '0.2s' }} />
                     <Star className="shimmer-star h-4 w-4 fill-[#D4AF37] text-[#D4AF37]" style={{ animationDelay: '0.4s' }} />
@@ -225,7 +225,7 @@ export function LandingElite() {
                   </div>
                   
                   {/* Reviews Scroller */}
-                  <div className="relative h-[120px] w-full max-w-[320px] overflow-hidden rounded-2xl border border-[#D4AF37]/20 bg-[#0B1A30]/40 backdrop-blur-md">
+                  <div className="relative h-[120px] w-full overflow-hidden rounded-2xl border border-[#D4AF37]/20 bg-[#0B1A30]/40 backdrop-blur-md">
                     <div className="pointer-events-none absolute inset-x-0 top-0 z-10 h-8 bg-gradient-to-b from-[#0B1A30] to-transparent"></div>
                     <div className="pointer-events-none absolute inset-x-0 bottom-0 z-10 h-8 bg-gradient-to-t from-[#0B1A30] to-transparent"></div>
                     
@@ -259,7 +259,7 @@ export function LandingElite() {
                   </div>
                 </div>
               </div>
-              <div className="space-y-6 self-center w-full max-w-[20rem] sm:max-w-[28rem] lg:max-w-none mx-auto lg:mx-0">
+              <div className="space-y-6 lg:self-start lg:pt-12 w-full max-w-[20rem] sm:max-w-[28rem] lg:max-w-none mx-auto lg:mx-0">
                 <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#D4AF37] text-center lg:text-left">Solange Bezerra</h3>
                 <p className="text-base sm:text-lg lg:text-xl leading-relaxed text-[#CBD5E1] text-center lg:text-left">
                   Com a autoridade de quem preside o SINTTASB/DF e lidera a Comissão de Direito Sindical da OAB-Taguatinga, a Dra. Solange Bezerra não atua apenas na teoria ela está na linha de frente onde as decisões acontecem.
