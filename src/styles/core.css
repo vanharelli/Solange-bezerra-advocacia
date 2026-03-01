@@ -76,7 +76,25 @@ a {
   outline-offset: 2px;
 }
 
+/* Anti-Piracy and Content Shield */
+* { 
+  -webkit-user-select: none !important; 
+  -moz-user-select: none !important; 
+  -ms-user-select: none !important; 
+  user-select: none !important; 
+} 
 
+input, textarea { 
+  -webkit-user-select: auto !important; 
+  -moz-user-select: auto !important; 
+  -ms-user-select: auto !important; 
+  user-select: auto !important; 
+} 
+
+img, video { 
+  -webkit-user-drag: none !important; 
+  pointer-events: none !important; 
+}
 
 @keyframes shimmerStar {
   0%, 100% {
