@@ -215,7 +215,7 @@ export function LandingElite() {
                     <div className="pointer-events-none absolute inset-0 rounded-xl shadow-[inset_0_0_0_1px_rgba(212,175,55,0.15)]"></div>
                   </div>
                 </div>
-                <div className="flex flex-col items-center lg:items-start gap-4">
+                <div className="flex flex-col items-center lg:items-start gap-6">
                   <div className="flex items-center justify-center lg:justify-start gap-1.5" aria-label="Avaliação 5 de 5">
                     <Star className="shimmer-star h-4 w-4 fill-[#D4AF37] text-[#D4AF37]" style={{ animationDelay: '0s' }} />
                     <Star className="shimmer-star h-4 w-4 fill-[#D4AF37] text-[#D4AF37]" style={{ animationDelay: '0.2s' }} />
@@ -223,15 +223,40 @@ export function LandingElite() {
                     <Star className="shimmer-star h-4 w-4 fill-[#D4AF37] text-[#D4AF37]" style={{ animationDelay: '0.6s' }} />
                     <Star className="shimmer-star h-4 w-4 fill-[#D4AF37] text-[#D4AF37]" style={{ animationDelay: '0.8s' }} />
                   </div>
-                  <a
-                     href="https://www.google.com/maps/place/Solange+Bezerra+Advogada/@-15.8256109,-48.093843,13.5z/data=!4m10!1m2!2m1!1sQNA+08,+Lote+01,+Sala+307+-+Taguatinga+Norte!3m6!1s0x935a33b68a0d922d:0xd2a2c511ff26c77e!8m2!3d-15.8104084!4d-48.0610733!15sCixRTkEgMDgsIExvdGUgMDEsIFNhbGEgMzA3IC0gVGFndWF0aW5nYSBOb3J0ZZIBBmxhd3llcuABAA!16s%2Fg%2F11yxmfdx6l!9m1!1b1?entry=ttu&g_ep=EgoyMDI2MDIyNS4wIKXMDSoASAFQAw%3D%3D"
-                     target="_blank"
-                     rel="noopener noreferrer"
-                     className="inline-flex items-center gap-2 rounded-full border border-[#D4AF37]/30 bg-[#D4AF37]/5 px-4 py-1.5 text-[10px] font-bold uppercase tracking-widest text-[#D4AF37] transition-all hover:bg-[#D4AF37] hover:text-[#0B1A30] hover:border-[#D4AF37]"
-                   >
-                    <ExternalLink className="h-3 w-3" />
-                    Ver avaliações no Google
-                  </a>
+                  
+                  {/* Reviews Scroller */}
+                  <div className="relative h-[120px] w-full max-w-[320px] overflow-hidden rounded-2xl border border-[#D4AF37]/20 bg-[#0B1A30]/40 backdrop-blur-md">
+                    <div className="pointer-events-none absolute inset-x-0 top-0 z-10 h-8 bg-gradient-to-b from-[#0B1A30] to-transparent"></div>
+                    <div className="pointer-events-none absolute inset-x-0 bottom-0 z-10 h-8 bg-gradient-to-t from-[#0B1A30] to-transparent"></div>
+                    
+                    <div className="animate-scroll-up flex flex-col gap-4 p-4">
+                      {[
+                        { name: "Marcos Oliveira", text: "Excelente atendimento, Dra. Solange resolveu meu caso trabalhista com muita precisão." },
+                        { name: "Ana Paula Silva", text: "Profissional extremamente competente e dedicada. Recomendo fortemente!" },
+                        { name: "Roberto Santos", text: "A melhor defesa empresarial que já contratei. Estratégia impecável." },
+                        { name: "Carla Mendes", text: "Transparência e segurança em cada etapa do processo. Nota 10!" },
+                        { name: "João Ferreira", text: "Dra. Solange é autoridade no assunto. Senti total confiança no meu caso sindical." }
+                      ].concat([
+                        { name: "Marcos Oliveira", text: "Excelente atendimento, Dra. Solange resolveu meu caso trabalhista com muita precisão." },
+                        { name: "Ana Paula Silva", text: "Profissional extremamente competente e dedicada. Recomendo fortemente!" },
+                        { name: "Roberto Santos", text: "A melhor defesa empresarial que já contratei. Estratégia impecável." },
+                        { name: "Carla Mendes", text: "Transparência e segurança em cada etapa do processo. Nota 10!" },
+                        { name: "João Ferreira", text: "Dra. Solange é autoridade no assunto. Senti total confiança no meu caso sindical." }
+                      ]).map((review, idx) => (
+                        <div key={idx} className="flex flex-col gap-1 border-b border-[#D4AF37]/10 pb-2 last:border-0">
+                          <div className="flex items-center gap-2">
+                            <div className="flex gap-0.5">
+                              {[...Array(5)].map((_, i) => (
+                                <Star key={i} className="h-2 w-2 fill-[#D4AF37] text-[#D4AF37]" />
+                              ))}
+                            </div>
+                            <span className="text-[10px] font-bold text-white uppercase">{review.name}</span>
+                          </div>
+                          <p className="text-[11px] leading-tight text-[#CBD5E1] italic">"{review.text}"</p>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
                 </div>
               </div>
               <div className="space-y-6 self-center w-full max-w-[20rem] sm:max-w-[28rem] lg:max-w-none mx-auto lg:mx-0">
