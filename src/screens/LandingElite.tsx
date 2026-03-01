@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
-import { MessageCircle, Scale, Shield, Users, Activity, AlertOctagon, X, ChevronLeft, ChevronRight, Instagram, MapPin, Star, ExternalLink } from 'lucide-react'
+import { MessageCircle, Scale, Shield, Users, Activity, AlertOctagon, X, ChevronLeft, ChevronRight, Instagram, MapPin, Star } from 'lucide-react'
 import { AuthorityCard } from '../components/AuthorityCard'
 import { Header } from '../components/Header'
 
