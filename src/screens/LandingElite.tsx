@@ -355,7 +355,7 @@ export function LandingElite() {
                 <span>@SOLANGEBEZERRAADV</span>
               </a>
             </div>
-            <div className="text-white/90">© 2026 Solange Bezerra Advocacia. Sigilo Absoluto.</div>
+            <div className="text-white/90">© 2026 Solange Bezerra Advocacia. Todos os direitos reservados. Sigilo Absoluto.</div>
             <div className="mt-1">
               <button
                 onClick={() => setIsTermsOpen(true)}
@@ -363,6 +363,16 @@ export function LandingElite() {
               >
                 Termos de Uso e Privacidade
               </button>
+            </div>
+            <div className="mt-2 opacity-30 hover:opacity-100 transition-opacity">
+              <a
+                href="https://www.instagram.com/marketelli_/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[10px] text-[#CBD5E1] flex items-center gap-1 justify-center"
+              >
+                Desenvolvido por <span className="font-semibold">@marketelli_</span>
+              </a>
             </div>
           </div>
         </footer>
@@ -494,16 +504,16 @@ export function LandingElite() {
                         />
                       </div>
                     </div>
-                    <div className="mt-10 flex flex-col sm:flex-row gap-4 items-center">
+                    <div className="mt-8 flex flex-col sm:flex-row gap-4 items-center">
                       <button
                         onClick={() => setCurrentStep(2)}
-                        className="w-full sm:w-auto order-2 sm:order-1 px-6 py-4 text-sm font-bold text-[#CBD5E1] hover:text-white transition-colors"
+                        className="w-full sm:w-auto order-2 sm:order-1 px-6 py-3.5 text-sm font-bold text-[#CBD5E1] hover:text-white transition-colors"
                       >
                         Voltar
                       </button>
                       <button
                         onClick={submitFinal}
-                        className="w-full sm:flex-1 order-1 sm:order-2 neon-pulse rounded-2xl border-2 border-[#D4AF37] bg-[#D4AF37] px-8 py-4 text-sm font-bold uppercase tracking-widest text-[#0B1A30] transition-all hover:bg-transparent hover:text-[#D4AF37] active:scale-95"
+                        className="w-full sm:flex-1 order-1 sm:order-2 neon-pulse rounded-2xl border-2 border-[#D4AF37] bg-[#D4AF37] px-6 py-3.5 text-sm font-bold uppercase tracking-widest text-[#0B1A30] transition-all hover:bg-transparent hover:text-[#D4AF37] active:scale-95"
                       >
                         Enviar para Dra. Solange
                       </button>
