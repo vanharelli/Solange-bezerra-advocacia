@@ -428,12 +428,12 @@ export function LandingElite() {
             </div>
             <div className="mt-2 opacity-30 hover:opacity-100 transition-opacity">
               <a
-                href="https://www.instagram.com/marketelli_/"
+                href="https://www.marketelli.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[10px] text-[#CBD5E1] flex items-center gap-1 justify-center"
               >
-                Desenvolvido por <span className="font-semibold">@marketelli_</span>
+                Desenvolvido por <span className="font-semibold">www.marketelli.com</span>
               </a>
             </div>
           </div>
