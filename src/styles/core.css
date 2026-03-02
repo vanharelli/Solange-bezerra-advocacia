@@ -16,8 +16,6 @@ body {
   overflow-x: hidden;
   -ms-overflow-style: none;
   scrollbar-width: none;
-  /* Bloqueia o Pull-to-Refresh e o efeito elástico no topo/fundo da tela */ 
-  overscroll-behavior-y: none; 
 }
 
 body {
