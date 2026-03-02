@@ -589,7 +589,7 @@ export function LandingElite() {
         {isTermsOpen && (
           <div
             ref={termsModalRef}
-            className="fixed inset-0 z-50 flex items-center justify-center bg-black/70"
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 p-4"
             role="dialog"
             aria-modal="true"
             aria-labelledby="termos-title"
@@ -597,23 +597,27 @@ export function LandingElite() {
           >
             <div
               ref={termsPanelRef}
-              className="relative mx-4 w-full max-w-2xl rounded-2xl bg-[#0B1A30] text-white shadow-[0_20px_60px_rgba(0,0,0,0.5)] ring-1 ring-white/10"
+              className="relative w-full max-w-2xl rounded-2xl bg-[#0B1A30] text-white shadow-[0_20px_60px_rgba(0,0,0,0.5)] ring-1 ring-white/10 flex flex-col max-h-[90vh]"
               onClick={(e) => e.stopPropagation()}
             >
-              <button
-                onClick={() => setIsTermsOpen(false)}
-                aria-label="Fechar"
-                className="absolute right-4 top-4 z-20 rounded-md border border-[#D4AF37] px-3 py-1 text-sm font-semibold text-[#D4AF37] transition-colors hover:bg-[#D4AF37] hover:text-[#0B1A30]"
-              >
-                Fechar
-              </button>
-              <div className="relative z-0 px-6 py-8 sm:px-8 rounded-2xl bg-[#0B1A30]/35 backdrop-blur-md ring-1 ring-white/10">
-                <div className="pointer-events-none absolute inset-0 z-0 rounded-2xl shadow-[inset_0_0_0_1px_rgba(255,255,255,0.06)]"></div>
-                <h2 id="termos-title" className="text-xl font-bold tracking-wide text-[#D4AF37]">
-                  Termos de Uso e Política de Privacidade
+              {/* Header Fixo */}
+              <div className="flex items-center justify-between border-b border-[#D4AF37]/20 bg-[#0B1A30]/95 px-6 py-4 backdrop-blur-md rounded-t-2xl z-10 shrink-0">
+                <h2 id="termos-title" className="text-lg sm:text-xl font-bold tracking-wide text-[#D4AF37]">
+                  Termos de Uso e Privacidade
                 </h2>
-                <div className="mt-4 space-y-4 text-sm leading-6 text-white/90">
-                  <h3 className="mt-2 text-base font-semibold text-white">Resumo Didático de Elite</h3>
+                <button
+                  onClick={() => setIsTermsOpen(false)}
+                  aria-label="Fechar"
+                  className="rounded-md border border-[#D4AF37] px-3 py-1 text-xs sm:text-sm font-semibold text-[#D4AF37] transition-colors hover:bg-[#D4AF37] hover:text-[#0B1A30]"
+                >
+                  Fechar
+                </button>
+              </div>
+
+              {/* Conteúdo com Scroll */}
+              <div className="overflow-y-auto p-6 sm:p-8 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+                <div className="relative z-0 space-y-4 text-sm leading-6 text-white/90">
+                  <h3 className="text-base font-semibold text-white">Resumo Didático de Elite</h3>
                   <ol className="list-decimal space-y-3 pl-5">
                     <li>
                       <span className="font-semibold text-white">Finalidade da Coleta:</span> Os dados fornecidos
@@ -635,7 +639,7 @@ export function LandingElite() {
                       segurança para garantir que seu relato não seja acessado por terceiros não autorizados.
                     </li>
                   </ol>
-                  <p className="pt-2">
+                  <p className="pt-2 border-t border-white/10 mt-4">
                     Ao enviar suas informações, você declara ter lido e concordado com este documento e autoriza o
                     tratamento dos dados para as finalidades indicadas, nos termos da LGPD.
                   </p>
