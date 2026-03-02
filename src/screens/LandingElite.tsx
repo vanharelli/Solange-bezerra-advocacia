@@ -117,7 +117,7 @@ export function LandingElite() {
 
       {/* Existing Content */}
       <div className="relative z-10 min-h-full">
-        {!isOpen && <Header onCtaClick={startLeadFlow} />}
+        {!isOpen && !isTermsOpen && <Header onCtaClick={startLeadFlow} />}
 
         <main className="mx-auto w-full max-w-6xl px-4 pb-16 pt-24 sm:px-6 sm:pb-20 sm:pt-32">
           <section className="relative flex min-h-[70vh] flex-col justify-center">
