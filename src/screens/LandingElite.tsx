@@ -88,13 +88,22 @@ export function LandingElite() {
     if (!nome || !whatsapp || !formData.natureza || !formData.urgencia) return
 
     const lines = [
-      '*Novo Lead – Advocacia de Combate*',
-      `• Natureza: ${formData.natureza}`,
-      `• Urgência: ${formData.urgencia}`,
+      '*SOLANGE BEZERRA ADVOCACIA | REGISTRO DE CONSULTA*',
+      '-----------------------------------------',
+      '*IDENTIFICAÇÃO DO SOLICITANTE:*',
       `• Nome: ${nome}`,
-      `• WhatsApp: ${whatsapp}`,
-      formData.observacao?.trim() ? `• Observação: ${formData.observacao.trim()}` : '',
-    ]
+      `• Telefone: ${whatsapp}`,
+      '',
+      '*DETALHAMENTO DA DEMANDA:*',
+      `• Área de Interesse: ${formData.natureza}`,
+      `• Urgência Relatada: ${formData.urgencia}`,
+      '',
+      formData.observacao?.trim() ? '*RELATO DOS FATOS:*' : '',
+      formData.observacao?.trim() ? `"${formData.observacao.trim()}"` : '',
+      '-----------------------------------------',
+      '_Documento gerado via Portal de Atendimento Digital._'
+    ];
+
     const text = encodeURIComponent(lines.filter(Boolean).join('\n'))
     const url = `https://wa.me/5561984713926?text=${text}`
     window.open(url, '_blank', 'noopener,noreferrer')
@@ -208,9 +217,12 @@ export function LandingElite() {
                 <div className="group relative mx-auto lg:mx-0 w-full max-w-[18rem] sm:max-w-[24rem] lg:max-w-[28rem] overflow-hidden rounded-2xl border border-[#D4AF37]/30 bg-[#0B1A30]/60 p-1">
                   <div className="relative bg-[#0B1A30]">
                     <img
-                      src="/solange.png"
+                      src="/solange.webp"
                       alt="Solange Bezerra"
                       className="w-full h-auto rounded-xl object-contain transition-all duration-500 ease-out hover:scale-105"
+                      fetchPriority="high"
+                      loading="eager"
+                      decoding="sync"
                     />
                     <div className="pointer-events-none absolute inset-0 rounded-xl shadow-[inset_0_0_0_1px_rgba(212,175,55,0.15)]"></div>
                   </div>

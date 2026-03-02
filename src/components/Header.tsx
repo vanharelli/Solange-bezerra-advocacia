@@ -39,12 +39,15 @@ export function Header({ onCtaClick }: HeaderProps) {
     >
       <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <div className="relative z-[220] flex items-center gap-3">
-          <img
-            src="/logo.png"
-            alt="Solange Bezerra Advocacia"
-            className="h-8 sm:h-10 md:h-12 w-auto transition-transform duration-300 hover:scale-105"
-          />
-        </div>
+              <img
+                src="/logo.webp"
+                alt="Solange Bezerra Advocacia"
+                className="h-8 sm:h-10 md:h-12 w-auto transition-transform duration-300 hover:scale-105"
+                fetchPriority="high"
+                loading="eager"
+                decoding="sync"
+              />
+            </div>
 
         <button
           onClick={onCtaClick}

@@ -17,6 +17,11 @@ body {
   overflow-y: auto;
   -ms-overflow-style: none;
   scrollbar-width: none;
+  /* Bloqueia o Pull-to-Refresh e o efeito elástico no topo/fundo da tela */ 
+  overscroll-behavior-y: none; 
+   
+  /* Permite scroll vertical, mas proíbe o zoom por gestos no CSS */ 
+  touch-action: pan-y;
 }
 
 body {
@@ -37,7 +42,7 @@ body::before {
   position: fixed;
   inset: 0;
   z-index: -10;
-  background-image: url("/background.png");
+  background-image: url("/background.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
